@@ -1,0 +1,114 @@
+GroupGroup Devlog
+Roster: chernovolenkoD, freudenbergJ, keY, taradachukA
+
+
+         _____
+       .'/L|__`.
+      / =[_]O|` \
+      |"+_____":|
+    __:='|____`-:__
+   ||[] ||====| []||
+   ||[] | |=| | []||
+   |:||_|=|U| |_||:|
+   |:|||]_=_ =[_||:| 
+   | |||] [_][]C|| |
+   | ||-'"""""`-|| |
+   /|\\_\_|_|_/_//|\
+  |___|   /|\   |___|
+  `---'  |___|  `---'
+         `---'
+*this is stolen art
+
+taradachukA -- 2018-01-02 13:30:48
+repo created and basic framework established 
+
+freudenbergJ -- 2018-01-02 13:59:21
+added login database
+
+keY -- 2018-01-03 13:55:48
+goes to a random street view at every refresh, though the location is still displayed, gotta fix that
+
+freudenbergJ -- 2018-01-04 16:02:30
+added login flask stuff
+
+keY -- 2018-01-04 15:24:48
+does not display location of random street view anymore!
+
+keY -- 2018-01-04 23:10:20
+drops marker to wherever the user clicks on the map
+distance is calculated from goal to user click
+
+freudenbergJ -- 2018-01-07 13:05:23
+added points column to db
+added datasets for map themes
+
+taradachukA -- 2018-01-07-13:50:39
+added second marker dropdown to display actual location
+fixed bug involving different location being shown when submitting
+
+keY -- 2018-01-07 20:50:36
+distance is now only calculated when player submits
+the submit button is only enabled when the player clicks on the map (and thus a marker is dropped)
+the submit button is gone after submitting once so the player can't cheat
+when the player submits, points are added to their account
+
+danielC -- 2018-01-10 21:34:30
+added (working) CSS for navbar
+
+danielC -- 2018-01-11 09:22:17
+added home page and more css
+
+freudenbergJ -- 2018-01-14 17:40:45
+added function to get coordinates of random major us city
+ajax call to display said coordinates
+
+freudenbergJ -- 2018-01-15 11:12:23
+changed us city file to database
+reduced search radius so it lands within the city
+
+keY -- 2018-01-15 13:57:30
+doesn't land on water anymore by recursively finding a place on land
+incorporated this stuff into Jerome's US theme stuff (my stuff is only for non-theme)
+road label on the floor is removed so players can't cheat by looking up the road name
+
+keY -- 2018-01-17 11:32:26
+better algorithm for themed games
+
+danielC -- 2018-01-20 16:02:44
+Map resize on hover + more CSS + yes
+
+taradachukA -- 2018-01-20 17:08:45
+added CSS to leaderboard page
+leaderboard page highlights user in blue
+
+freudenbergJ -- 2018-01-20 20:34:16
+added function to turn dataset of locations into db table
+changed us_cities to using geocoding
+
+keY -- 2018-01-20 21:12:40
+now always lands on a themed place by keeping on trying until it lands
+
+freudenbergJ -- 2018-01-22 02:05:07
+linked buttons to theme toggling using localStorage
+
+keY -- 2018-01-22 11:32:26
+csv's for every continent
+ran into a lot of trouble with non ascii characters but fixed it by normalizing them yay
+
+freudenbergJ -- 2018-01-23 12:52:31
+linked yiduo's csvs to db and added buttons
+
+danielC -- 2018-01-23 13:05:44
+Map refresh and resize on submit, also other map stuff
+
+keY -- 2018-01-23 13:46:18
+goes for another location if it's taking more than 30 tries in increasing radius
+
+taradachukA -- 2018-01-23 15:33:32
+general bug fixing
+
+danielC -- 2018-01-24 22:23:17
+Added CSS for login and register, other things prettier
+
+freudenbergJ -- 2018-01-23 23:38:26
+readme, changes.txt, and updated design doc

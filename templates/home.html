@@ -1,0 +1,68 @@
+{% extends "loginbase.html" %}
+{% block content1 %}
+<div class="inner cover">
+	<h1 class="cover-heading"> Welcome </h1>
+	<h2 class="cover-heading"> Geographical Guessing Game </h2>
+	<h3>
+		Guess where you are on the planet with google street view stuff.
+	</h3><br>
+	<h3><a class="btn btn-lg btn-success" href="/game" role="button">Play Game</a></h3>
+	<h4>
+		By G.R.O.U.P Group: Jerome Freudenberg, Daniel Chernovolenko, Yiduo Ke, Alex Taradachuk
+	</h4>
+	<h3> Choose a theme below!</h3>
+</div>
+<div class="album text-muted">
+	<div class="container">
+
+	  <div class="row">
+		<div class="card" id = "normal">
+			<img src='../static/images/world.png' alt="Card image cap">
+			<p class="card-text">World</p>
+		</div>
+		<div class="card" id = "theme-1-button-us">
+		  <img src='../static/images/us.png' alt="Card image cap">
+		  <p class="card-text" href="/game">United States</p>
+		</div>
+		<div class="card" id = "theme-2-button-uni">
+				<img src='../static/images/unis.png' alt="Card image cap">
+		  <p class="card-text">American Universities</p>
+		</div>
+		<div class="card" id = "theme-3-button-amusement">
+				<img src='../static/images/amuse.png' alt="Card image cap">
+			<p class="card-text"> Amusment Parks </p>
+		</div>
+		<div class="card" id = "theme-4-button-africa">
+				<img src='../static/images/africa.png' alt="Card image cap">
+			<p class="card-text"> Africa </p>
+		</div>
+		<div class="card" id = "theme-5-button-asia">
+				<img src='../static/images/asia.png' alt="Card image cap">
+			<p class="card-text"> Asia </p>
+		</div>
+		<div class="card" id = "theme-6-button-north-america">
+				<img src='../static/images/na.png' alt="Card image cap">
+			<p class="card-text"> North America </p>
+		</div>
+		<div class="card" id = "theme-7-button-europe">
+				<img src='../static/images/eu.png' alt="Card image cap">
+			<p class="card-text"> Europe </p>
+		</div>
+		<div class="card" id = "theme-8-button-oceania">
+				<img src='../static/images/au.png' alt="Card image cap">
+			<p class="card-text"> Oceania </p>
+		</div>
+		<div class="card" id = "theme-9-button-world-capitals">
+				<img src='../static/images/capitol.png' alt="Card image cap">
+			<p class="card-text"> World Capitals </p>
+		</div>
+		<div class="card" id = "theme-10-button-south-america">
+				<img src='../static/images/sa.png' alt="Card image cap">
+			<p class="card-text"> South America </p>
+		</div>
+		<div class="card active" id = "dummy">
+		</div>
+	</div>
+</div>
+<script src = "../static/home.js"></script>
+{% endblock %}
